@@ -1,12 +1,12 @@
-Analysis of complexity
+# Analysis of complexity
 
-Task 0: 
+## Task 0: 
   This task presents a time and space complexity of O(1), there is no
   iteration making the 5 operations have no increment by the input and
   the access to the arrays data is of O(1) generating no increased
   complexity.
 
-Task 1:
+## Task 1:
   First we iterate through the list of texts and calls to filter and 
   flatten the data. And we perform a third flattening on the conjunction
   of both new lists. Making first a loop over n and then a loop over n*4
@@ -17,7 +17,7 @@ Task 1:
   that leaves us with O(5n + 2n*4) making it a O(n*4) a very expensive
   operations in its current form. 
 
-Task 2:
+## Task 2:
   This one have less complexity since you only require flattening the 
   list once which makes the entire algorithm a little faster. First we 
   flat the calls array, then we extract the numbers and turn them into a
@@ -26,7 +26,7 @@ Task 2:
   console. Nonetheless its still an O(n*4) because of the size of the 
   internal array being flattened.
 
-Task 3:
+## Task 3:
   In this task we first reduce the calls to a list containing our objective
   (the inner loops al negilible because they check for patterns inside
   the strings which are less than 12 characters long), afterwards we sort the 
@@ -39,7 +39,7 @@ Task 3:
   The third task have no double iteration which makes it an O(4n + log n) that
   simplifies to O(n log n).
 
-Task 4:
+## Task 4:
   In the last task we make 3 reduce operations for that we require to make the
   needed calculations. Then we make another reduce operation that have 3 internal
   loops making the current process 3n + 3n * 2. Then we generate a dictionary from

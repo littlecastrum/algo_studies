@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": [
+      "es2017.object",
+      "es2015",
+      "es2017"
+    ],                           
+    "declaration": true,
+    "outDir": "dist",
+    "alwaysStrict": true,
+    // "typeRoots": [],                  /* List of folders to include type definitions from. */
+    // "types": [],                      /* Type declaration files to be included in compilation. */
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+  },
+  "files": [
+    "./node_modules/@types/node/index.d.ts"
+  ],
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
